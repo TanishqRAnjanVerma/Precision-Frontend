@@ -1,0 +1,73 @@
+.product-details-page {
+  margin: 30px;
+}
+
+.product-details-page .product-details {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+}
+
+.product-details-page .product-details .product-img {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  border-radius: 5px;
+  border: 1px solid grey;
+}
+
+.product-details-page .product-details .product-img .product-details-img {
+  height: 400px;
+  overflow: hidden;
+  transition: transform 0.6s ease;
+}
+
+.product-details-page .product-details .product-img .product-details-img:hover {
+  transform: scale(1.1);
+}
+
+.product-details-page .product-details .product-details-info {
+  width: 50%;
+  display: grid;
+  align-items: center;
+  justify-content: center;
+}
+
+.product-details-page .product-details .product-details-info .review-section {
+  display: grid;
+}
+
+.product-details-page .product-details .product-details-info .review-section .review-header {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.product-details-page .product-details .product-details-info .review-section .review-form {
+  display: grid;
+}
+
+.product-details-page .product-details .product-details-info .review-section .review-form .review-input {
+  border-radius: 5px;
+  border: 1px solid grey;
+  outline: none;
+  resize: none;
+  padding: 8px;
+  height: 100px;
+  margin-bottom: 15px;
+}
+
+.product-details-page .product-details .product-details-info .review-section .review-form .submit-review-btn {
+  padding: 10px;
+  border-radius: 5px;
+  font-size: 12px;
+  border: none;
+  color: white;
+  background: #0b4fff;
+}
+
+.product-details-page .product-details .product-details-info .reviews {
+  margin-top: 10px;
+}

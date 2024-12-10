@@ -1,0 +1,17 @@
+.product-display {
+    position: relative;
+    margin: 45px 85px 45px 85px;
+
+    .product-display-header {
+        font-size: 1.5rem;
+        margin-top: 20px;
+    }
+
+    .product-display-list {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+        margin-top: 30px;
+        row-gap: 50px;
+        gap: 30px;
+    }
+}

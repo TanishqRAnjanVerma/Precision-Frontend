@@ -1,0 +1,198 @@
+.about {
+    margin: 45px 62px 45px 62px;
+
+    .about-header {
+        display: grid;
+        justify-content: center;
+        place-items: center;
+        text-align: center;
+
+        .about-title {
+            font-size: 1.5rem;
+        }
+
+        .about-para {
+            font-size: 1rem;
+        }
+
+        .about-img {
+            margin-top: 20px;
+            height: 450px;
+            width: 100%;
+            object-position: bottom;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+    }
+
+    .about-mid {
+        display: grid;
+        margin-top: 40px;
+
+        .about-title {
+            font-size: 1.5rem;
+        }
+
+        .about-para {
+            font-size: 1rem;
+
+        }
+
+        .header-box {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 10px;
+            // background: rgba(244, 244, 244, 1);
+            padding: 20px;
+
+
+            .view-product-text-3 {
+                text-align: center;
+                padding: 15px;
+                font-size: 1.35rem;
+            }
+
+            .view-product-list {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                text-align: center;
+                padding: 15px;
+                cursor: pointer;
+
+
+
+                .view-product-list-item {
+                    margin-right: 40px;
+
+                    .view-card {
+                        height: 200px;
+                        width: 200px;
+
+
+                        .product-list-image {
+                            border-radius: 10px;
+                            object-fit: cover;
+                            overflow: hidden;
+                            height: 100%;
+                            width: 100%;
+                            transform: scale(1.1);
+
+                            &:hover {
+                                box-shadow: 2px 4px 10px 4px #444436;
+                                transition: 0.4s ease;
+                            }
+                        }
+                    }
+
+                    .product-list-title {
+                        margin: 20px 0 0 0;
+                        font-weight: 500;
+
+                        &:hover {
+                            color: rgba(11, 79, 255, 1);
+                        }
+                    }
+
+
+                }
+            }
+        }
+
+    }
+}
+
+@media (max-width: 768px) {
+    .about {
+        margin: 30px;
+
+        .about-mid {
+            .header-box {
+                padding: 20px;
+
+
+                .view-product-list {
+                    display: grid;
+
+                    .view-product-list-item {
+                        margin-right: 0px;
+
+                        .view-card {
+                            margin: 20px;
+                        }
+
+                        .product-list-title {
+                            margin: 20px 0 0 0;
+                        }
+
+
+                    }
+                }
+            }
+
+        }
+
+
+    }
+}
+
+@media only screen and (min-width: 769px) and (max-width: 992px) {
+    .about {
+        .about-mid {
+            .header-box {
+                padding: 20px;
+
+                .view-product-list {
+                    display: grid;
+                    grid-template-columns: auto auto;
+
+                    .view-product-list-item {
+                        margin-right: 0px;
+
+                        .view-card {
+                            margin: 20px;
+                        }
+
+                        .product-list-title {
+                            margin: 20px 0 0 0;
+                        }
+
+
+                    }
+                }
+            }
+        }
+
+    }
+}
+
+@media only screen and (min-width: 993px) and (max-width: 1240px) {
+    .about {
+        .about-mid {
+            .header-box {
+                padding: 0px;
+
+                .view-product-list {
+
+                    padding: 0px;
+
+                    .view-product-list-item {
+                        margin-right: 0px;
+
+                        .view-card {
+                            margin: 20px;
+                        }
+
+                        .product-list-title {
+                            margin: 20px 0 0 0;
+                        }
+
+
+                    }
+                }
+            }
+        }
+
+    }
+}

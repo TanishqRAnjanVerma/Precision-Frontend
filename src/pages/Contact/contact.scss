@@ -1,0 +1,45 @@
+.contact-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+    background: #ebeef1;
+
+    .contact-sec1 {
+        padding: 50px;
+        width: 50%;
+        box-shadow: 10px 10px 10px -1px rgba(10, 99, 169, 0.16), -10px -10px 10px -1px rgba(255, 255, 255, 0.70);
+    }
+
+    .contact-sec2 {
+        display: grid;
+        justify-content: center;
+        width: 50%;
+
+        .contact-form {
+            .form-group {
+                margin: 20px;
+
+                .input-field {
+                    padding: 8px;
+                    border-radius: 8px;
+                    width: 180%;
+                    border: none;
+                    outline: none;
+                    resize: none;
+                }
+
+                .submit-btn {
+                    padding: 8px;
+                    margin: 8px;
+                    width: 65%;
+                    border: none;
+                    color: white;
+                    border-radius: 10px;
+                    background: rgba(11, 79, 255, 1);
+                }
+            }
+        }
+    }
+
+}

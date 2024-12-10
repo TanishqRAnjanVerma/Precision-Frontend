@@ -1,0 +1,49 @@
+.faq {
+    position: relative;
+    margin: 45px 85px 45px 85px;
+
+    .faq-header {
+        text-align: center;
+        font-size: 1.5rem;
+        margin: 30px;
+    }
+
+    .faq-accordion {
+        margin: 50px;
+    }
+
+    .faq-btn {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        .faq-show-more {
+            text-align: center;
+            border: none;
+            padding: 10px;
+            border-radius: 10px;
+            background: rgba(11, 79, 255, 1);
+            color: white;
+        }
+    }
+
+}
+
+@media (max-width:640px) {
+    .faq {
+        position: relative;
+        margin: 20px;
+
+        .faq-header {
+            font-size: 1.25rem;
+
+        }
+
+        .faq-accordion {
+            margin: 20px;
+        }
+
+
+    }
+
+}

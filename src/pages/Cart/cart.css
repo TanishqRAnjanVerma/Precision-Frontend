@@ -1,0 +1,126 @@
+.cart {
+  margin: 45px 62px 45px 62px;
+}
+
+.cart .cart-items .cart-items-title {
+  display: grid;
+  grid-template-columns: 1fr 1.5fr 1fr 1fr 1fr 0.5fr;
+  align-items: center;
+  font-size: 12px;
+}
+
+.cart .cart-items .cart-items-title .title-item {
+  margin: 0px;
+}
+
+.cart .cart-items .line {
+  margin: 0px;
+}
+
+.cart .cart-items .cart-items-item {
+  margin: 5px;
+  font-weight: 600;
+}
+
+.cart .cart-items .cart-items-item .cart-img {
+  height: 50px;
+  width: 50px;
+}
+
+.cart .cart-items .cart-items-item .remove {
+  cursor: pointer;
+  margin: 0px;
+  color: red;
+}
+
+.cart .cart-bottom {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+  gap: 100px;
+}
+
+.cart .cart-bottom .cart-total {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  gap: 20px;
+}
+
+.cart .cart-bottom .cart-total .total-header {
+  font-size: 1.5rem;
+}
+
+.cart .cart-bottom .cart-total .cart-detail .cart-total-details {
+  display: flex;
+  justify-content: space-between;
+}
+
+.cart .cart-bottom .cart-total .cart-detail .cart-total-details .title-item {
+  margin: 0px;
+}
+
+.cart .cart-bottom .cart-total .cart-detail .line {
+  margin: 10px 0;
+}
+
+.cart .cart-bottom .cart-total .cart-total-btn {
+  padding: 10px;
+  border-radius: 5px;
+  width: 200px;
+  border: none;
+  color: white;
+  font-weight: 600;
+  font-size: 12px;
+  background: #0b4fff;
+}
+
+.cart .cart-bottom .cart-promocode {
+  flex: 1;
+}
+
+.cart .cart-bottom .cart-promocode .title-item {
+  margin: 0px;
+}
+
+.cart .cart-bottom .cart-promocode .cart-promocode-input {
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 5px;
+  background-color: #d9e4ff;
+}
+
+.cart .cart-bottom .cart-promocode .cart-promocode-input .promocode-input {
+  background: transparent;
+  border: none;
+  outline: none;
+  padding-left: 10px;
+}
+
+.cart .cart-bottom .cart-promocode .cart-promocode-input .promocode-btn {
+  width: 150px;
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  color: white;
+  font-weight: 600;
+  font-size: 12px;
+  background: #0b4fff;
+}
+
+@media (max-width: 768px) {
+  .cart {
+    margin: 40px;
+  }
+  .cart .cart-items .cart-items-title .title-item {
+    margin: 5px;
+  }
+  .cart .cart-bottom {
+    flex-direction: column-reverse;
+  }
+  .cart .cart-bottom .cart-promocode {
+    justify-content: start;
+  }
+}

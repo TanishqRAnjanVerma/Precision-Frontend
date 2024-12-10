@@ -1,0 +1,42 @@
+.contact-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 50px;
+  background: #ebeef1;
+}
+
+.contact-section .contact-sec1 {
+  padding: 50px;
+  width: 50%;
+  box-shadow: 10px 10px 10px -1px rgba(10, 99, 169, 0.16), -10px -10px 10px -1px rgba(255, 255, 255, 0.7);
+}
+
+.contact-section .contact-sec2 {
+  display: grid;
+  justify-content: center;
+  width: 50%;
+}
+
+.contact-section .contact-sec2 .contact-form .form-group {
+  margin: 20px;
+}
+
+.contact-section .contact-sec2 .contact-form .form-group .input-field {
+  padding: 8px;
+  border-radius: 8px;
+  width: 180%;
+  border: none;
+  outline: none;
+  resize: none;
+}
+
+.contact-section .contact-sec2 .contact-form .form-group .submit-btn {
+  padding: 8px;
+  margin: 8px;
+  width: 65%;
+  border: none;
+  color: white;
+  border-radius: 10px;
+  background: #0b4fff;
+}

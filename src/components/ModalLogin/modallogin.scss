@@ -1,0 +1,180 @@
+.login-modal {
+    .modal-b-1 {
+        display: grid;
+        place-items: center;
+        justify-content: center;
+
+        .modal-b-txt-1 {
+            text-align: center;
+        }
+
+        .modal-b-txt-2 {
+            font-size: 12px;
+            text-align: center;
+        }
+    }
+
+    .modal-b-2 {
+        .login-form {
+            display: grid;
+            place-items: center;
+            justify-content: center;
+
+            .name-input {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                position: relative;
+                width: 100%;
+                font-size: 14px;
+                padding: 10px;
+                border-radius: 10px;
+                margin: 5px;
+                border: 1px solid rgb(190, 190, 190);
+            }
+
+            .email-login {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                position: relative;
+                width: 100%;
+                font-size: 14px;
+                padding: 10px;
+                border-radius: 10px;
+                margin: 5px;
+                border: 1px solid rgb(190, 190, 190);
+
+                .country-code {
+                    margin-right: 10px;
+                    font-size: 13px;
+                }
+
+                .email-input {
+                    font-size: 13px;
+                    border: none;
+                    width: 100%;
+
+                    &::placeholder {
+                        font-size: 13px;
+                        position: relative;
+                    }
+
+                    &:focus {
+                        outline: none;
+                    }
+                }
+            }
+
+            .password-input {
+                font-size: 13px;
+                padding: 10px;
+                border-radius: 10px;
+                margin: 5px;
+                border: 1px solid rgb(190, 190, 190);
+                width: 100%;
+
+
+                .password-field {
+                    border: none;
+                    margin-left: 24px;
+                    margin-right: 41px;
+
+                    &::placeholder {
+                        font-size: 13px;
+                        position: relative;
+                    }
+
+                    &:focus {
+                        outline: none;
+                    }
+
+                }
+
+                .eye-icon {
+                    color: rgba(11, 79, 255, 1);
+                    ;
+
+                }
+            }
+
+            .btn-login {
+                color: rgb(255, 255, 255);
+                background: rgba(11, 79, 255, 1);
+                ;
+                font-size: 12px;
+                padding: 10px;
+                width: 100%;
+                margin: 10px;
+                border-radius: 10px;
+                border: none;
+            }
+
+            .or_1 {
+                position: relative;
+                width: 100%;
+                display: flex;
+                -webkit-box-align: center;
+                align-items: center;
+                margin: 5px;
+
+                .horizontal-line {
+                    border-top: none;
+                    border-right: none;
+                    border-left: none;
+                    border-image: initial;
+                    width: 100%;
+                    border-bottom: 1px solid rgb(56, 53, 53);
+                    padding: 0px;
+                }
+
+                .or {
+                    position: absolute;
+                    padding: 0.1rem 0.6rem 0.5rem 0.5rem;
+                    background: rgb(255, 255, 255);
+                    font-size: 15px;
+                    left: 50%;
+                    transform: translateX(-50%);
+                    color: rgb(105, 105, 105);
+                }
+            }
+
+            .email {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                background: rgb(255, 255, 255);
+                font-size: 12px;
+                padding: 10px;
+                width: 100%;
+                border-radius: 10px;
+                border: 1px solid rgb(190, 190, 190);
+                cursor: pointer;
+
+                .mail-icon {
+                    margin-right: 10px;
+                    font-size: 18px;
+                }
+            }
+
+            .new-to-tdl {
+                margin: 10px;
+
+                text-align: center;
+
+                .new {
+                    font-size: 12px;
+
+                    .create-account {
+                        color: rgba(11, 79, 255, 1);
+                        ;
+                        text-decoration: none;
+                        border: none;
+                        background: white;
+                    }
+                }
+            }
+
+        }
+    }
+}
