@@ -23,7 +23,7 @@ const StoreContextProvider = (props) => {
       await axios.post(
         url + "/api/cart/add",
         { itemId },
-        { headers: { token } }
+        { headers: { token }, withCredentials: true }
       );
     }
   };
@@ -36,7 +36,7 @@ const StoreContextProvider = (props) => {
       await axios.post(
         url + "/api/cart/remove",
         { itemId },
-        { headers: { token } }
+        { headers: { token }, withCredentials: true }
       );
     }
   };
@@ -57,7 +57,9 @@ const StoreContextProvider = (props) => {
   };
 
   const fetchProductList = async () => {
-    const response = await axios.get(url + "/api/precision/list");
+    const response = await axios.get(url + "/api/precision/list", {
+      withCredentials: true,
+    });
     setProductList(response.data.data);
   };
 
@@ -65,7 +67,7 @@ const StoreContextProvider = (props) => {
     const response = await axios.post(
       url + "/api/cart/get",
       {},
-      { headers: { token } }
+      { headers: { token }, withCredentials: true }
     );
     setCartItems(response.data.cartData);
   };

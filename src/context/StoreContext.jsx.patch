@@ -1,0 +1,94 @@
+const addToCart = async (itemId) => {
+    if (!cartItems[itemId]) {
+      setCartItems((prev) => ({ ...prev, [itemId]: 1 }));
+    } else {
+      setCartItems((prev) => ({ ...prev, [itemId]: prev[itemId] + 1 }));
+    }
+
+    if (token) {
+      await axios.post(
+        url + "/api/cart/add",
+        { itemId },
+        { headers: { token } }
+      );
+    }
+  };
+=======
+
+  // Add to Cart Functionality
+
+  const addToCart = async (itemId) => {
+    if (!cartItems[itemId]) {
+      setCartItems((prev) => ({ ...prev, [itemId]: 1 }));
+    } else {
+      setCartItems((prev) => ({ ...prev, [itemId]: prev[itemId] + 1 }));
+    }
+
+    if (token) {
+      await axios.post(
+        url + "/api/cart/add",
+        { itemId },
+        { headers: { token }, withCredentials: true }
+      );
+    }
+  };
+>>>>>>> REPLACE
+
+<<<<<<< SEARCH
+  // Remove from Cart Funtionality
+
+  const removeFromCart = async (itemId) => {
+    setCartItems((prev) => ({ ...prev, [itemId]: prev[itemId] - 1 }));
+    if (token) {
+      await axios.post(
+        url + "/api/cart/remove",
+        { itemId },
+        { headers: { token } }
+      );
+    }
+  };
+=======
+
+  // Remove from Cart Funtionality
+
+  const removeFromCart = async (itemId) => {
+    setCartItems((prev) => ({ ...prev, [itemId]: prev[itemId] - 1 }));
+    if (token) {
+      await axios.post(
+        url + "/api/cart/remove",
+        { itemId },
+        { headers: { token }, withCredentials: true }
+      );
+    }
+  };
+>>>>>>> REPLACE
+
+<<<<<<< SEARCH
+  const fetchProductList = async () => {
+    const response = await axios.get(url + "/api/precision/list");
+    setProductList(response.data.data);
+  };
+
+  const loadCartData = async (token) => {
+    const response = await axios.post(
+      url + "/api/cart/get",
+      {},
+      { headers: { token } }
+    );
+    setCartItems(response.data.cartData);
+  };
+=======
+
+  const fetchProductList = async () => {
+    const response = await axios.get(url + "/api/precision/list", { withCredentials: true });
+    setProductList(response.data.data);
+  };
+
+  const loadCartData = async (token) => {
+    const response = await axios.post(
+      url + "/api/cart/get",
+      {},
+      { headers: { token }, withCredentials: true }
+    );
+    setCartItems(response.data.cartData);
+  };
