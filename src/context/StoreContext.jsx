@@ -5,7 +5,8 @@ import axios from "axios";
 export const StoreContext = createContext(null);
 const StoreContextProvider = (props) => {
   const [cartItems, setCartItems] = useState({});
-  const url = "https://precision-backend.onrender.com/api/blog/list";
+  const url = "https://precision-backend.onrender.com";
+
   const [token, setToken] = useState("");
   const [product_item_list, setProductList] = useState([]);
 
